@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,6 +24,7 @@
 }
 header {
   position: fixed;
+  z-index: 10;
   width: 1022px;
   height: 80px;
   background: #22356f;
@@ -143,8 +145,8 @@ header {
 }
 /* СЕКЦИЯ СКИЛЛС */
 .skills__main-box {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 .hard__title,
 .soft__title {
@@ -157,9 +159,21 @@ header {
 }
 .hard__items,
 .soft__items {
+  display: flex;
   font-family: Larsseit;
   font-size: 24px;
   line-height: 35px;
+}
+.skillbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.skillbox img{
+  width: 60px;
+  height: 60px;
 }
 .skills__main-box li {
   position: relative;
@@ -169,7 +183,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-.skills__main-box li:before {
+/* .skills__main-box li:before {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -188,7 +202,7 @@ header {
   content: "";
   left: 3px;
   top: 48px;
-}
+} */
 .skills__main-box:hover:before {
   box-shadow: 0 0 0 10px #22356f;
 }

@@ -1,1 +1,0 @@
-https://maryia-lysenina.github.io/rsschool-cv/
