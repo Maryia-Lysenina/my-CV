@@ -147,15 +147,21 @@ header {
   /* display: flex;
   justify-content: space-evenly; */
 }
-
+.skills__soft{
+  padding-left: 30px; 
+}
 .hard__title,
 .soft__title {
   font-family: Larsseit;
   font-size: 30px;
   line-height: 32px;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #5cc2cf;
   margin-bottom: 15px;
+  text-align: left;
+}
+.hard__title{
+  padding-left: 30px; 
 }
 .hard__items,
 .soft__items {
@@ -178,7 +184,7 @@ header {
   align-items: center;
 
 }
-h3{
+.skillbox h3{
   text-align: center;
 }
 .skillbox img{
@@ -265,7 +271,7 @@ h3{
   content: none;
 }
 .code__box {
-  background-color: #62d0df;
+
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
