@@ -1,4 +1,5 @@
 .wrapper {
+  color: #141f41;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,10 +7,11 @@
   min-height: 100%;
   overflow: hidden;
   border: solid 1px #22356f;
-  box-shadow: 1px 20px 50px 5px #48557e;
+  box-shadow: 1px 20px 30px 4px #48557e;
   max-width: 1024px;
   background: #e5e9f5;
-  background-image: url(../assets/img/blue1.jpg);
+  /* background-image: url(../assets/img/blue1.jpg); */
+
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -85,7 +87,7 @@ header {
   font-size: 28px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #5cc2cf;
   text-align: right;
   margin-top: 30px;
 }
@@ -93,7 +95,7 @@ header {
   height: 2px;
   width: 40%;
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: #5cc2cf;
   text-align: right;
 }
 .about__box {
@@ -107,7 +109,7 @@ header {
   border-radius: 50%;
   overflow: hidden;
   border: solid 3px #22356f;
-  box-shadow: 1px 20px 50px 5px #48557e;
+  box-shadow: 1px 10px 20px 3px #48557e;
 }
 .avatar img {
   width: 100%;
@@ -123,7 +125,6 @@ header {
   font-family: Larsseit;
   font-size: 56px;
   line-height: 53px;
-  color: #22356f;
   margin-bottom: 20px;
 }
 .name h2 {
@@ -131,7 +132,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  color: #22356f;
   margin-bottom: 40px;
 }
 .about__intro {
@@ -139,7 +139,6 @@ header {
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0.005em;
-  color: #22356f;
   margin-top: 35px;
   text-align: center;
 }
@@ -148,6 +147,7 @@ header {
   /* display: flex;
   justify-content: space-evenly; */
 }
+
 .hard__title,
 .soft__title {
   font-family: Larsseit;
@@ -164,12 +164,22 @@ header {
   font-size: 24px;
   line-height: 35px;
 }
+.soft__items{
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 220px;
+}
 .skillbox{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  align-items: center;
+
+}
+h3{
+  text-align: center;
 }
 .skillbox img{
   width: 60px;
@@ -178,12 +188,11 @@ header {
 .skills__main-box li {
   position: relative;
   padding: 15px 0 20px 40px;
-  color: #22356f;
   font-variant: small-caps;
   font-weight: bold;
   cursor: pointer;
 }
-/* .skills__main-box li:before {
+.soft__items li:before {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -194,7 +203,7 @@ header {
   transition: 0.3s ease-in-out;
   top: 35px;
 }
-.skills__main-box li:after {
+.soft__items li:after {
   position: absolute;
   border-left: 1px dotted #22356f;
   width: 1px;
@@ -202,11 +211,11 @@ header {
   content: "";
   left: 3px;
   top: 48px;
-} */
+}
 .skills__main-box:hover:before {
   box-shadow: 0 0 0 10px #22356f;
 }
-.hard__items li:last-child::after,
+.soft__items li:nth-child(3)::after,
 .soft__items li:last-child::after {
   content: none;
 }
@@ -225,7 +234,6 @@ header {
 .language__list li {
   position: relative;
   padding: 15px 0 20px 40px;
-  color: #22356f;
   font-variant: small-caps;
   font-weight: bold;
   cursor: pointer;
@@ -332,7 +340,6 @@ header {
   line-height: 25px;
   letter-spacing: -0.006em;
   text-transform: uppercase;
-  color: #22356f;
 }
 /* FOOTER = = = = = =  */
 footer {
