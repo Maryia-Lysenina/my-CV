@@ -270,13 +270,26 @@ header {
 .language__list li:last-child::after {
   content: none;
 }
-.code__box {
-
+.project__box {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
   border-radius: 10px;
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-link{
+  display: inline-flex;
+  justify-content: center;
+  width: 600px;
+}
+.project-link img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  margin-top: 15px;
 }
 /* СЕКЦИЯ ОПЫТ */
 .experience__main {
