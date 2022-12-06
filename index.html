@@ -36,6 +36,30 @@
                             </li>
                         </ul>
                     </nav>
+                    <nav class="main-nav-tablet">
+                        <ul class="menu__list-tablet">
+                            <li>
+                                <a href="#About" class="nav__link">About me</a>
+                            </li>
+                            <li>
+                                <a href="#Skills" class="nav__link">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#Experience" class="nav__link">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#Education" class="nav__link">Education</a>
+                            </li>
+                            <li>
+                                <a href="#Contacts" class="nav__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line2"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -57,7 +81,9 @@
                             </div>
                         </div>
                         <div class="about__intro">
-                            <p>Hi! My name is Maria. I was born in Minsk. I'm interested in psychology, studying English and learning new information. I'm inspired to observe the results of my work and strive to improve my skills by daily work. It's a magnificent feeling when your efforts come to fruition. My main goal now is to gain work experience and become a successful developer. </p>
+                            <p>Hi! My name is Maria. I was born in Minsk. I'm interested in psychology, studying English and learning new information. 
+                                I'm inspired to observe the results of my work and strive to improve my skills by daily work. It's a magnificent feeling when your efforts come to fruition. 
+                                My main goal now is to gain work experience in a forward-thinking cohesive team. </p>
                         </div>
                     </div>
                 </div>
@@ -159,14 +185,14 @@
                         </div>
                         <div class="project__box">
                             <p class="item__position">Marvel Information Portal</p>
-                            <p class="item__position">Built with ReactJS using Marvel Comics API:</p>
+                            <p class="project-descr">Built with ReactJS using Marvel Comics API:</p>
                             <a class="project-link" href="https://marvel-information-portal-fcsp.vercel.app/">
                                 <img src="./assets/img/marvel.jpg" alt="marvel">
                             </a>
                         </div>
                         <div class="project__box">
-                            <p class="item__position">Tic Tac Toe Game</p>
-                            <p class="item__position">Built with native JavaScript as part of Rolling-scopes-school</p>
+                            <p class="item__position">Tic Tac Toe Game</p>  
+                            <p class="project-descr">Built with native JavaScript</p>
                             <a class="project-link" href="https://maryia-lysenina.github.io/tic-tac-toe/">
                                 <img src="./assets/img/tic-tac-toe.png" alt="tictactoe">
                             </a>
@@ -183,45 +209,31 @@
                         </div>
                         <div class="experience__item">
                             <div class="item__date">
-                                <p>nov 2018-nov 2022</p> 
+                                <p>oct 2022-now</p> 
                             </div>
                             <div class="item__box">
                                 <p class="item__position">
-                                    Deputy chief of testing laboratory
+                                    Front-End Developer (trainee) in ITEC Education Complex
+                                </p>
+                                <p class="item__description">
+                                    Developing training projects<br>
+                                    Participation in the development of commercial projects
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <div class="item__date">
+                                <p>aug 2013-nov 2022</p> 
+                            </div>
+                            <div class="item__box">
+                                <p class="item__position">
+                                    Deputy chief/Engineer of testing laboratory
                                 </p>
                                 <p class="item__description">
                                     Providing technical leadership in provision of testing laboratory<br>
                                     Contracting with customers <br>
-                                    Customer negotiation 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="item__date">
-                                <p>march 2018-oct 2018</p> 
-                            </div>
-                            <div class="item__box">
-                                <p class="item__position">
-                                    Chief of testing laboratory
-                                </p>
-                                <p class="item__description">
-                                    Department management of the company <br>
-                                    Contracting with customers <br>
-                                    Engineering supervision
-                                </p>
-                            </div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="item__date">
-                                <p>aug 2013-febr 2018</p> 
-                            </div>
-                            <div class="item__box">
-                                <p class="item__position">
-                                    Engineer of testing laboratory
-                                </p>
-                                <p class="item__description">
-                                    Aerodynamic testing of ventilation systems <br>
-                                    Calculation of the actual operating parameters of the system and their analysis<br>
+                                    Aerodynamic testing of ventilation systems 
                                 </p>
                             </div>
                         </div>
@@ -237,29 +249,29 @@
                         </div>
                         <div class="education__item">
                             <div class="item__date">
-                                <p>dec 2021-oct 2022</p> 
+                                <p>oct 2021-nov 202</p> 
                             </div>
                             <div class="item__box">
                                 <p class="item__position">
-                                    ITEC Education
+                                    ITEC Education Complex
                                 </p>
                                 <p class="item__description">
                                     <span> Web Front-End Development </span><br>
-                                    Java Script, React.js
+                                    HTML, CSS, Java Script, React.js
                                 </p>
                             </div>
                         </div>
                         <div class="education__item">
                             <div class="item__date">
-                                <p>sep 2021-nov 2021</p> 
+                                <p>dec 2021-feb 2022</p> 
                             </div>
                             <div class="item__box">
                                 <p class="item__position">
-                                    ITEC Education
+                                    Rolling-Scopes-School
                                 </p>
                                 <p class="item__description">
                                     <span> Web Front-End Development </span><br>
-                                    HTML, CSS
+                                    HTML, CSS, Java Script
                                 </p>
                             </div>
                         </div>
@@ -328,5 +340,6 @@
             </div>
         </footer> 
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
