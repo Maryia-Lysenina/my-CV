@@ -195,6 +195,13 @@ header {
   justify-content: space-between;
   padding-left: 30px;
 }
+@media (max-width: 576px) {
+  .about__box {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+  }
+}
 .avatar {
   max-width: 350px;
   max-height: 350px;
@@ -202,6 +209,13 @@ header {
   overflow: hidden;
   border: solid 3px #22356f;
   box-shadow: 1px 10px 20px 3px #48557e;
+}
+@media (max-width: 576px) {
+  .avatar {
+  max-width: 270px;
+  max-height: 270px;
+  margin-bottom: 50px;
+  }
 }
 .avatar img {
   width: 100%;
@@ -226,6 +240,14 @@ header {
   font-size: 24px;
   margin-bottom: 40px;
 }
+@media (max-width: 576px) {
+  .name h1 {
+    font-size: 48px;
+  }
+  .name h2 {
+    font-size: 20px; 
+  }
+}
 .about__intro {
   font-family: Larsseit;
   font-size: 24px;
@@ -233,6 +255,13 @@ header {
   letter-spacing: 0.005em;
   margin-top: 35px;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .about__intro {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 15px;
+  }
 }
 /* СЕКЦИЯ СКИЛЛС */
 .skills__main-box {
@@ -280,6 +309,12 @@ header {
   flex-wrap: wrap;
   height: 220px;
 }
+@media (max-width: 576px) {
+  .soft__items {
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+}
 .skillbox{
   display: flex;
   flex-direction: column;
@@ -298,6 +333,12 @@ header {
 .skillbox img{
   width: 60px;
   height: 60px;
+}
+@media (max-width: 576px) {
+  .skillbox img{
+    width: 40px;
+    height: 40px;
+  }
 }
 .skills__main-box li {
   position: relative;
@@ -409,6 +450,11 @@ header {
   justify-content: center;
   width: 600px;
 }
+@media (max-width: 576px) {
+  .project-link {
+    width: 300px;
+  }
+}
 .project-link:hover{
   transform: translateY(-5px);
 }
@@ -442,6 +488,13 @@ header {
   margin-right: 30px;
   background-color: #22356f;
 }
+@media (max-width: 576px) {
+  .experience__item,
+  .education__item{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .item__date p {
   font-family: Larsseit;
   font-size: 22px;
@@ -453,6 +506,12 @@ header {
 @media (max-width: 991px) {
   .item__date p{
     font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .item__date {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 .item__position {
@@ -475,6 +534,12 @@ header {
   line-height: 20px;
   letter-spacing: -0.03em;
   color: rgba(34, 53, 111, 0.5);
+}
+@media (max-width: 576px) {
+  .item__description,
+  .item__position {
+   text-align: center;
+  }
 }
 /* СЕКЦИЯ ОБРАЗОВАНИЕ */
 .education__main {
@@ -512,6 +577,12 @@ footer {
   margin-bottom: 30px;
   padding-left: 30px;
 }
+@media (max-width: 576px) {
+  .footer__box {
+   flex-wrap: wrap;
+   padding-left: 0px;
+  }
+}
 .contacts__info {
   width: 100%;
   font-family: Larsseit;
@@ -519,6 +590,13 @@ footer {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #62d0df;
+}
+@media (max-width: 576px) {
+  .contacts__info {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 }
 .contacts__social {
   width: 50%;
