@@ -7,10 +7,10 @@ burger.addEventListener('click', function(){
     grey.classList.toggle('active');
 });
     function closeMenu(){
+        document.body.classList.remove('active');
         burger.classList.remove('active');
         nav.classList.remove('active');
         grey.classList.remove('active');
-        document.body.classList.remove('active');
         };
 let navLinks = document.querySelectorAll('.main-nav-tablet .nav__link');
 navLinks.forEach((el) => el.addEventListener('click', closeMenu));
