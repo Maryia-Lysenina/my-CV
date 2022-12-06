@@ -187,6 +187,9 @@ header {
 .skillbox h3{
   text-align: center;
 }
+.skillbox:hover{
+  transform: translateY(-5px);
+}
 .skillbox img{
   width: 60px;
   height: 60px;
@@ -196,7 +199,7 @@ header {
   padding: 15px 0 20px 40px;
   font-variant: small-caps;
   font-weight: bold;
-  cursor: pointer;
+  cursor:default;
 }
 .soft__items li:before {
   position: absolute;
@@ -218,6 +221,10 @@ header {
   left: 3px;
   top: 48px;
 }
+.soft__items li:hover,
+.language__list li:hover{
+  transform: translateX(-5px);
+}
 .skills__main-box:hover:before {
   box-shadow: 0 0 0 10px #22356f;
 }
@@ -235,14 +242,13 @@ header {
   line-height: 35px;
   font-variant: small-caps;
   font-weight: bold;
-  cursor: pointer;
 }
 .language__list li {
   position: relative;
   padding: 15px 0 20px 40px;
   font-variant: small-caps;
   font-weight: bold;
-  cursor: pointer;
+  cursor: default;
 }
 .language__list li:before {
   position: absolute;
@@ -284,6 +290,9 @@ header {
   display: inline-flex;
   justify-content: center;
   width: 600px;
+}
+.project-link:hover{
+  transform: translateY(-5px);
 }
 .project-link img{
   width: 100%;
