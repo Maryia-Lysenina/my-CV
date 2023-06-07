@@ -1,4 +1,4 @@
-body.active{
+body.active {
   overflow: hidden;
 }
 .wrapper {
@@ -51,7 +51,7 @@ header {
   .container {
     max-width: 720px;
   }
-  header{
+  header {
     width: 100%;
     height: 60px;
   }
@@ -68,19 +68,18 @@ header {
   cursor: pointer;
   position: relative;
   z-index: 3;
-
 }
 @media (max-width: 768px) {
   .header__burger {
     display: block;
   }
-  .header{
+  .header {
     justify-content: end;
   }
-  header{
+  header {
     padding: 8px 0;
   }
-  .main-nav{
+  .main-nav {
     display: none;
   }
 }
@@ -140,7 +139,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.menu__list-tablet li{
+.menu__list-tablet li {
   margin-bottom: 15px;
 }
 .nav__link {
@@ -212,9 +211,9 @@ header {
 }
 @media (max-width: 576px) {
   .avatar {
-  max-width: 270px;
-  max-height: 270px;
-  margin-bottom: 50px;
+    max-width: 270px;
+    max-height: 270px;
+    margin-bottom: 50px;
   }
 }
 .avatar img {
@@ -245,7 +244,7 @@ header {
     font-size: 48px;
   }
   .name h2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
 .about__intro {
@@ -268,8 +267,8 @@ header {
   /* display: flex;
   justify-content: space-evenly; */
 }
-.skills__soft{
-  padding-left: 30px; 
+.skills__soft {
+  padding-left: 30px;
 }
 .hard__title,
 .soft__title {
@@ -281,8 +280,8 @@ header {
   margin-bottom: 15px;
   text-align: left;
 }
-.hard__title{
-  padding-left: 30px; 
+.hard__title {
+  padding-left: 30px;
 }
 .hard__items,
 .soft__items {
@@ -291,6 +290,7 @@ header {
   font-size: 24px;
   line-height: 35px;
 }
+
 @media (max-width: 991px) {
   .hard__items,
   .soft__items {
@@ -299,12 +299,12 @@ header {
   }
 }
 @media (max-width: 991px) {
-  .hard__items{
+  .hard__items {
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-.soft__items{
+.soft__items {
   flex-direction: column;
   flex-wrap: wrap;
   height: 220px;
@@ -315,27 +315,40 @@ header {
     height: 100%;
   }
 }
-.skillbox{
+/* Добавила progress-section: */
+.progress__items {
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 0 80px 0 80px;
+}
+.progress__items li {
+  padding: 10px 10px 10px 10px;
+}
+.progress__items li:after {
+  display: none;
+}
+.skillbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
   align-items: center;
-
 }
-.skillbox h3{
+.skillbox h3 {
   text-align: center;
 }
-.skillbox:hover{
+.skillbox:hover {
   transform: translateY(-5px);
 }
-.skillbox img{
+.skillbox img {
   width: 60px;
   height: 60px;
 }
 @media (max-width: 576px) {
-  .skillbox img{
+  .skillbox img {
     width: 40px;
     height: 40px;
   }
@@ -345,7 +358,7 @@ header {
   padding: 15px 0 20px 40px;
   font-variant: small-caps;
   font-weight: bold;
-  cursor:default;
+  cursor: default;
 }
 .soft__items li:before {
   position: absolute;
@@ -368,7 +381,7 @@ header {
   top: 48px;
 }
 .soft__items li:hover,
-.language__list li:hover{
+.language__list li:hover {
   transform: translateX(-5px);
 }
 .skills__main-box:hover:before {
@@ -438,14 +451,14 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.project-descr{
+.project-descr {
   font-family: Larsseit;
   font-size: 18px;
   line-height: 20px;
   font-variant: small-caps;
   color: rgba(34, 53, 111, 0.5);
 }
-.project-link{
+.project-link {
   display: inline-flex;
   justify-content: center;
   width: 600px;
@@ -455,10 +468,10 @@ header {
     width: 300px;
   }
 }
-.project-link:hover{
+.project-link:hover {
   transform: translateY(-5px);
 }
-.project-link img{
+.project-link img {
   width: 100%;
   height: 100%;
   border-radius: 10%;
@@ -490,7 +503,7 @@ header {
 }
 @media (max-width: 576px) {
   .experience__item,
-  .education__item{
+  .education__item {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -504,7 +517,7 @@ header {
   text-align: center;
 }
 @media (max-width: 991px) {
-  .item__date p{
+  .item__date p {
     font-size: 18px;
   }
 }
@@ -523,7 +536,7 @@ header {
   color: #22356f;
 }
 @media (max-width: 991px) {
-  .item__position{
+  .item__position {
     font-size: 20px;
     line-height: 28px;
   }
@@ -538,7 +551,7 @@ header {
 @media (max-width: 576px) {
   .item__description,
   .item__position {
-   text-align: center;
+    text-align: center;
   }
 }
 /* СЕКЦИЯ ОБРАЗОВАНИЕ */
@@ -579,8 +592,8 @@ footer {
 }
 @media (max-width: 576px) {
   .footer__box {
-   flex-wrap: wrap;
-   padding-left: 0px;
+    flex-wrap: wrap;
+    padding-left: 0px;
   }
 }
 .contacts__info {
@@ -642,4 +655,3 @@ footer {
   width: 100%;
   height: 100%;
 }
-
