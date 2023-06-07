@@ -323,11 +323,22 @@ header {
   margin-bottom: 15px;
   padding: 0 80px 0 80px;
 }
+@media (max-width: 576px) {
+  .progress__items {
+    flex-wrap: wrap;
+    padding: 0 30px 0 30px;
+  }
+}
 .progress__items li {
   padding: 10px 10px 10px 10px;
 }
 .progress__items li:after {
   display: none;
+}
+@media (max-width: 576px) {
+  .progress__items li:after {
+    display: block;
+  }
 }
 .skillbox {
   display: flex;
